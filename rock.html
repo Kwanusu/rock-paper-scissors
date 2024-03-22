@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rock Paper Scissors Game</title>
+      <link src="stylesheet" href="rock.css">
+  </head>
+  <body>
+      <h1 class="title">
+        Rock Paper Scissors      
+      </h1>
+      <div class="move">
+        <button 
+          class="move-icon js-rock-button"><i class="fa-solid fa-hand-fist"></i>
+        </button>
+      
+        <button 
+          class="move-icon js-paper-button"><i class="fa-regular fa-hand"></i>
+        </button>
+      
+        <button 
+          class="move-icon js-scissors-button"><i class="fa-solid fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div> 
+       <p class="js-result result"></p>
+       <p class="js-moves"></p>
+       <p class="js-score score"></p>
+      </div>
+      <div>
+        <button  class="reset-score-button js-reset-score-button" onclick="
+          score.wins = 0;
+          score.losses = 0;
+          score.ties = 0;
+          localStorage.removeItem('score')
+          updateScoreElement();
+          ">Reset Score
+        </button>
+        <button 
+          class="auto-play-button js-auto-play-button">Auto Play
+        </button>
+      </div> 
+  </body>
+  <script src="https://kit.fontawesome.com/7adf3be8fa.js" crossorigin="anonymous"></script>
+  <script src="rock.js">
+  </script>
+</html>

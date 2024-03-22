@@ -1,0 +1,32 @@
+*{
+    background-color: rgba(25,25,25);
+    color: white;
+    align-items: center;
+   }
+   .title{
+    font-size: 30px;
+    font-weight: 500;
+   }
+   .move-icon {
+    height: auto;
+    width:100%;
+   }
+   .move {
+   padding: 50px;
+   }
+   .reset-score-button{
+    background-color: rgb(233, 19, 19);
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+   }
+   .auto-play-button {
+    background-color: rgb(66, 233, 0);
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+   }
